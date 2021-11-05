@@ -1,0 +1,96 @@
+<!doctype html>
+
+<head>
+    <meta Content-Type: text/html; charser="UTF-8">
+    <meta http-equiv="X-AU-Compatible" content="IE-edge">
+    <meta charser="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+
+    <link href="../img/icon_buggy.png" rel="icon">
+
+    <title>
+        Servicios
+    </title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script type="text/javascript" src="../extjs7/build/ext-all.js"></script>
+    <script type="text/javascript" src="../extjs7/build/examples/classic/shared/include-ext.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/locale-es.js"></script>
+    <script type="text/javascript" src="../js/moment.min.js"></script>
+    <!-- CAMBIAR EL KEY DE GOOGLE-->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxK7zpe95daeqkS5-7azUn4kbHmZRYR5s"></script>
+    <script>
+        function reconectar() {
+            location.reload();
+        }
+	</script>
+    <style>
+        .boxtext .x-form-text-default {
+            background-color: #f6f3ef;
+        }
+        .boxtext2 .x-form-text-default {
+            background-color: #ffffff;
+        }
+        /* .mybutton {
+            border-color: #126daf;
+            border-radius: 4px;
+            padding: 3px 3px 3px 3px;
+            border-width: 1px;
+            border-style: solid;
+            background-color: #3892d3;
+            font-size: 16px;
+        }
+        .mybutton:hover {
+            background-color: #99e6ff;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <!-- navegador -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top">
+    
+        <div class="container">
+            <a class="navbar-brand" href="#">
+            <img src="../img/buggy_log.png"  height="36">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">FORMULARIO SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="form_empleados.html">EMPLEADOS</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="form_equipos.html">EQUIPOS</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="form_tipo_servicio.html">TIPO SERVICIO</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="form_tarifas.html">TARIFAS</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">COMPAÑIAS</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="form_solicitantes.html">SOLICITANTES</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- formularios y js -->
+    <div id="servicios" style="width: 100%; padding-left:0px; padding-top: 0px"></div>
+    <div style="display: none;">
+        <div id="googleMap" class="googleMap" style="width: 100%; height:875px; padding-left:7px; padding-top: 5px;"></div><!--100% 792px612px 875px  960px-->
+    </div>
+    <script type="text/javascript" src="form_servicios.js"></script>
+</body>
+
