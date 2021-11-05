@@ -9,7 +9,7 @@
         //CONSULTAR DATOS EN BD
         $u = "postgres";
         $p = "postgres";
-        $conn = new PDO('pgsql:host=localhost;port=5432;dbname=bd_general', $u, $p);
+        $conn = new PDO('pgsql:host=192.168.100.3;port=5432;dbname=bd_general', $u, $p);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         //EJECUTA CONSULTA
         if ($idtipo == 0) {
